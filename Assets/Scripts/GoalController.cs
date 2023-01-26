@@ -46,7 +46,7 @@ public class GoalController : MonoBehaviour
             TextManager.ColorGoalText(
                 teamScoredGoal == TeamColor.Red ? new Color32(235, 64, 52, 255) : new Color32(66, 135, 245, 255));
 
-            _framesToHideGoalText = second * 3;
+            _framesToHideGoalText = second;
 
             teamTMPro.text = goalCount.ToString();
         }
