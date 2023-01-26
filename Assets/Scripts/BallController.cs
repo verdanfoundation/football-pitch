@@ -17,6 +17,7 @@ public class BallController : MonoBehaviour
 
     [Header("Ball Physics Settings")]
     public Rigidbody ballRigidbody;
+    public float maxAngularVelocity;
     private bool _isRigidbody;
 
     [HideInInspector] public int second;
@@ -27,6 +28,7 @@ public class BallController : MonoBehaviour
     {
         transform.position = StartingPosition;
         _isRigidbody = TryGetComponent<Rigidbody>(out ballRigidbody);
+        ballRigidbody.maxAngularVelocity = maxAngularVelocity;
         second = (int)(1 / Time.deltaTime);
     }
     
