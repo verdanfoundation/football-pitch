@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Quaternion = System.Numerics.Quaternion;
 
 public class CameraController : MonoBehaviour
 {
@@ -25,12 +26,11 @@ public class CameraController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F5))
         {
             cameraMode = cameraMode == CameraMode.Stay ? CameraMode.Follow : CameraMode.Stay;
-
-            var transformRotation = transform.rotation;
+            
             if (cameraMode == CameraMode.Stay)
             {
                 transform.position = new Vector3(0, 20, -28.5f);
-                transformRotation.eulerAngles = new Vector3(38.141f, 0, 0);
+                transform.rotation = UnityEngine.Quaternion.Euler(new Vector3(38.141f, 0, 0));
             }
         }
     }

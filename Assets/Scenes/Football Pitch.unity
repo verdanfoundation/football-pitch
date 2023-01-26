@@ -1187,6 +1187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70f6ea6045826fc8b21fb8230ffe774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballObject: {fileID: 1397004019}
   ballOnFallTransition: 7.5
   movementForce: 100
   jumpForce: 4000

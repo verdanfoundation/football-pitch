@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BallController
+    - CameraController
     - GoalController
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
@@ -106,6 +107,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6416}
     - Class: 114
       Script: {instanceID: 6538}
+    - Class: 114
+      Script: {instanceID: 23510}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1115,6 +1118,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: de36e7fbbe68eafdcc939f8dadbb1809
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraController
   platform: 24
   scenePathNames:
   - Assets/Scenes/Football Pitch.unity
